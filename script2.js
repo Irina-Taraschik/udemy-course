@@ -1,32 +1,16 @@
 "use strict";
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const str = 'test';
+const arr = [1, 2, 3, 4, 5];
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	private: false,
-};
+console.log(str[1]); // e (отсчет от нуля)
 
-for (let i = 0; i < 2; i++) {
-	const a = prompt('Один из последних просмотренных фильмов?', '');
-	const b = +prompt('На сколько оцените его?', '');
+let fruit = 'Some fruit';
+console.log(fruit.indexOf("uit"));  // 7 (отсчет от нуля, буква "u" седьмая)
 
-	personalMovieDB.movies[a] = b;
+const num = 12.43425;
+console.log(Math.round(num)); // 12
 
-	if (a != null && b!= null && a.length < 50 && a!= '' && b != '') {
-		i--
-	}
- }
-
-// const a = prompt('Один из последних просмотренных фильмов?', '');
-// const b = +prompt('На сколько оцените его?', '');
-// const c = prompt('Один из последних просмотренных фильмов?', '');
-// const d = +prompt('На сколько оцените его?', '');
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
-console.log(personalMovieDB);
+const test ='12.2px';
+console.log(parseInt(test));  // 12
+console.log(parseFloat(test)); // 12.2
