@@ -14,3 +14,4 @@ console.log(Math.round(num)); // 12
 const test ='12.2px';
 console.log(parseInt(test));  // 12
 console.log(parseFloat(test)); // 12.2
+
